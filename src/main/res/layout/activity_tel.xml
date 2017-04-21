@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <Button
+        android:id="@+id/Main_Menu"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Main Menu"
+        android:layout_toEndOf="@+id/textView6"
+        android:background="#9dc0fd"
+        android:layout_alignStart="@+id/label_mnc" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed of Movement"
+        android:background="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/userlabel_label"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Text_SS"
+        android:layout_below="@+id/textView6"
+        android:background="#C0C0C0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView6"
+        android:layout_alignLeft="@+id/textView7"
+        android:background="#C0C0C0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="Accuracy"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/Text_Bearing"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="Longitude"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="Altitude"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="Latitude"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/Text_Longitude"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Text_Acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="LAC"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/label_rnc_id"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Text_bearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignStart="@+id/Text_Altitude" />
+
+    <TextView
+        android:id="@+id/Text_Bearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="IP "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Text_Accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/Text_bearing"
+        android:layout_toLeftOf="@+id/textView11"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Text_Altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignStart="@+id/Text_Longitude"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignEnd="@+id/Text_Longitude" />
+
+    <TextView
+        android:id="@+id/Text_Longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView6"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Text_Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/Text_Longitude"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Text_IP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Text_Bearing"
+        android:layout_alignBottom="@+id/Text_Bearing"
+        android:layout_alignLeft="@+id/Text_Accuracy"
+        android:layout_alignRight="@+id/textView11"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Text_Lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Signal Strength"
+        android:background="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Text_Long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="Signal Strength (dbm)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/Text_Lat"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Text_Alt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="Cell ID"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/Text_Long"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/Text_LAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignEnd="@+id/Text_Latitude"
+        android:layout_alignBottom="@+id/Text_Acc"
+        android:layout_toEndOf="@+id/Text_Long" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="Bearing"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Text_CID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Text_Alt"
+        android:layout_alignBottom="@+id/Text_Alt"
+        android:layout_alignLeft="@+id/Text_LAC"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Text_Speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignEnd="@+id/Text_IP"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/Text_SS_dbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/Text_SS"
+        android:layout_alignEnd="@+id/Text_SS"
+        android:layout_toEndOf="@+id/Text_Long" />
+
+    <TextView
+        android:id="@+id/Text_SS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Text_Long"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/Text_Long"
+        android:layout_weight="0"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Data"
+        android:id="@+id/saveButton"
+        android:layout_alignTop="@+id/Main_Menu"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/Text_Speed"
+        android:background="#9dc0fd" />
+
+    <TextView
+        android:id="@+id/label_rnc_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="RNC ID"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/Text_Alt"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Text_RNC_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignEnd="@+id/Text_MNC"
+        android:layout_above="@+id/Text_Acc"
+        android:layout_alignStart="@+id/Text_CID" />
+
+    <TextView
+        android:id="@+id/userlabel_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Label"
+        android:background="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/saveButton"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/Text_UserLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fd9d9d"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_above="@+id/Main_Menu"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/Text_Lat"
+        android:layout_alignTop="@+id/userlabel_label" />
+
+    <TextView
+        android:id="@+id/label_mcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="MCC   "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/Text_Acc"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Text_MCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignEnd="@+id/Text_Lat"
+        android:layout_alignTop="@+id/label_mcc"
+        android:layout_toEndOf="@+id/label_mcc"
+        android:layout_alignBottom="@+id/label_mcc" />
+
+    <TextView
+        android:id="@+id/label_mnc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="MNC    "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/Text_MCC"
+        android:layout_alignStart="@+id/Text_LAC" />
+
+    <TextView
+        android:id="@+id/Text_MNC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/label_mnc"
+        android:layout_toEndOf="@+id/label_mnc" />
+
+    <TextView
+        android:id="@+id/label_psc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="PSC    "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/label_mcc"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Text_PSC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/label_psc"
+        android:layout_alignEnd="@+id/Text_Lat"
+        android:layout_alignBottom="@+id/label_psc"
+        android:layout_toEndOf="@+id/label_psc" />
+
+    <TextView
+        android:id="@+id/label_utrancid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="UTRAN CID"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/Text_Long"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/Text_CID"
+        android:layout_toStartOf="@+id/Text_SS_dbm" />
+
+    <TextView
+        android:id="@+id/Text_UTRAN_CID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/Text_CID"
+        android:layout_alignEnd="@+id/Text_MNC"
+        android:layout_alignTop="@+id/label_utrancid"
+        android:layout_toEndOf="@+id/label_utrancid" />
+
+</RelativeLayout>
